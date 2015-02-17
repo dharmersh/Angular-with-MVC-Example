@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a123706cc3914d62a1ba2d6571935c94" Name="Diagram1" ZoomLevel="64" >
+        <EntityTypeShape EntityType="DataModel.User" Width="1.5" PointX="10" PointY="4.375" />
+        <EntityTypeShape EntityType="DataModel.Role" Width="1.5" PointX="3" PointY="5.875" />
+        <EntityTypeShape EntityType="DataModel.UserRoleMap" Width="1.5" PointX="5.25" PointY="5.75" />
+        <EntityTypeShape EntityType="DataModel.Menu" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="DataModel.ControllerName" Width="1.5" PointX="0.75" PointY="2" />
+        <EntityTypeShape EntityType="DataModel.Action" Width="1.5" PointX="0.75" PointY="6" />
+        <EntityTypeShape EntityType="DataModel.RoleMenuMap" Width="1.5" PointX="5.25" PointY="1.75" />
+        <AssociationConnector Association="DataModel.UserUserRoleMap" />
+        <AssociationConnector Association="DataModel.RoleUserRoleMap" />
+        <AssociationConnector Association="DataModel.RoleRoleMenuMap" />
+        <AssociationConnector Association="DataModel.ControllerNameMenu" />
+        <AssociationConnector Association="DataModel.ActionMenu" />
+        <AssociationConnector Association="DataModel.MenuRoleMenuMap" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

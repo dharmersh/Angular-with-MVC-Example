@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJsAppDemo", "AngularJsAppDemo\AngularJsAppDemo.csproj", "{45726D2A-09DD-40A4-82EB-9BD5BB158BD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJsAppDemo.Tests", "AngularJsAppDemo.Tests\AngularJsAppDemo.Tests.csproj", "{4D0CE259-537F-444D-95DB-6575902A41C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJsAppDemo.DOL", "AngularJsAppDemo.DOL\AngularJsAppDemo.DOL.csproj", "{DAAC9926-6EDE-490F-9907-93CF86C2C0B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJsAppDemo.DAL", "AngularJsAppDemo.DAL\AngularJsAppDemo.DAL.csproj", "{9EDB60FF-6144-4ACE-9718-07C4448B0944}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9D9D31F3-5DE1-4C85-915E-4C1F2B412C5A} = {9D9D31F3-5DE1-4C85-915E-4C1F2B412C5A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJsAppDemo.Business", "AngularJsAppDemo.Business\AngularJsAppDemo.Business.csproj", "{7BC65D62-E5F4-41F3-8F87-4EB921FAC01C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJsAppDemo.Utility", "AngularJsAppDemo.Utility\AngularJsAppDemo.Utility.csproj", "{888AF48F-BAFD-45C5-BD96-536A5609A32E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyService", "MyService\MyService.csproj", "{9D9D31F3-5DE1-4C85-915E-4C1F2B412C5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45726D2A-09DD-40A4-82EB-9BD5BB158BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45726D2A-09DD-40A4-82EB-9BD5BB158BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45726D2A-09DD-40A4-82EB-9BD5BB158BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45726D2A-09DD-40A4-82EB-9BD5BB158BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D0CE259-537F-444D-95DB-6575902A41C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D0CE259-537F-444D-95DB-6575902A41C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D0CE259-537F-444D-95DB-6575902A41C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D0CE259-537F-444D-95DB-6575902A41C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAAC9926-6EDE-490F-9907-93CF86C2C0B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAAC9926-6EDE-490F-9907-93CF86C2C0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAAC9926-6EDE-490F-9907-93CF86C2C0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAAC9926-6EDE-490F-9907-93CF86C2C0B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EDB60FF-6144-4ACE-9718-07C4448B0944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EDB60FF-6144-4ACE-9718-07C4448B0944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EDB60FF-6144-4ACE-9718-07C4448B0944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EDB60FF-6144-4ACE-9718-07C4448B0944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BC65D62-E5F4-41F3-8F87-4EB921FAC01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC65D62-E5F4-41F3-8F87-4EB921FAC01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC65D62-E5F4-41F3-8F87-4EB921FAC01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC65D62-E5F4-41F3-8F87-4EB921FAC01C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{888AF48F-BAFD-45C5-BD96-536A5609A32E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{888AF48F-BAFD-45C5-BD96-536A5609A32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{888AF48F-BAFD-45C5-BD96-536A5609A32E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{888AF48F-BAFD-45C5-BD96-536A5609A32E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D9D31F3-5DE1-4C85-915E-4C1F2B412C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D9D31F3-5DE1-4C85-915E-4C1F2B412C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D9D31F3-5DE1-4C85-915E-4C1F2B412C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D9D31F3-5DE1-4C85-915E-4C1F2B412C5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

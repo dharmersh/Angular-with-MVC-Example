@@ -1,0 +1,11 @@
+D:\Dharmesh\Project\AngularJsAppDemo\UserAMDService\bin\UserAMDService.dll
+D:\Dharmesh\Project\AngularJsAppDemo\UserAMDService\bin\UserAMDService.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\UserAMDService\obj\Debug\UserAMDService.csprojResolveAssemblyReference.cache
+D:\Dharmesh\Project\AngularJsAppDemo\UserAMDService\obj\Debug\UserAMDService.dll
+D:\Dharmesh\Project\AngularJsAppDemo\UserAMDService\obj\Debug\UserAMDService.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\UserAMDService\bin\AngularJsAppDemo.DOL.dll
+D:\Dharmesh\Project\AngularJsAppDemo\UserAMDService\bin\AngularJsAppDemo.Utility.dll
+D:\Dharmesh\Project\AngularJsAppDemo\UserAMDService\bin\EntityFramework.dll
+D:\Dharmesh\Project\AngularJsAppDemo\UserAMDService\bin\AngularJsAppDemo.DOL.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\UserAMDService\bin\AngularJsAppDemo.Utility.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\UserAMDService\bin\EntityFramework.xml

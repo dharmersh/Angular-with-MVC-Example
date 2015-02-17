@@ -1,0 +1,51 @@
+﻿<table style="width: 100%">
+    <tr>
+        <td style="vertical-align: top">
+            <div>
+                User Name :
+        <br />
+                <input type="text" data-ng-model="newUser.Name" />
+                <br />
+                Address :
+        <br />
+                <input type="text" data-ng-model="newUser.Address" />
+                <br />
+                Age :
+        <br />
+                <input type="text" data-ng-model="newUser.Age" />
+                <br />
+                <br />
+                <button data-ng-click="addUser(newUser);" class="btn btn-primary">Add User</button>
+
+            </div>
+        </td>
+        <td style="vertical-align: top; width: 70%">
+
+            <table class="table" style="border: 1px">
+                <tr>
+                    <th>Name
+                    </th>
+                    <th>Address
+                    </th>
+                    <th>Age
+                    </th>
+                </tr>
+                <tr data-ng-repeat="item in Users|filter:searchUser">
+                    <td>{{item.Name}}
+                    </td>
+                    <td>{{item.Address}}
+                    </td>
+                    <td>{{item.Age}}
+                    </td>
+                    <td>
+                        <a href="#openModal" data-ng-click="UpdateUser($index)">Update</a>
+                    </td>
+                    <td>
+                        <a href="#openModal" data-ng-click="deleteUser($index)">Delete</a>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,9 @@
+D:\Dharmesh\Project\AngularJsAppDemo\MyService\bin\MyService.dll
+D:\Dharmesh\Project\AngularJsAppDemo\MyService\bin\MyService.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\MyService\obj\Debug\MyService.dll
+D:\Dharmesh\Project\AngularJsAppDemo\MyService\obj\Debug\MyService.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\MyService\bin\AngularJsAppDemo.DOL.dll
+D:\Dharmesh\Project\AngularJsAppDemo\MyService\bin\EntityFramework.dll
+D:\Dharmesh\Project\AngularJsAppDemo\MyService\bin\AngularJsAppDemo.DOL.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\MyService\bin\EntityFramework.xml
+D:\Dharmesh\Project\AngularJsAppDemo\MyService\obj\Debug\MyService.csprojResolveAssemblyReference.cache

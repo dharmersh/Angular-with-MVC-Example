@@ -1,0 +1,8 @@
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\bin\Debug\AngularJsAppDemo.DOL.dll.config
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\bin\Debug\AngularJsAppDemo.DOL.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\bin\Debug\AngularJsAppDemo.DOL.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\bin\Debug\EntityFramework.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\bin\Debug\EntityFramework.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\obj\Debug\AngularJsAppDemo.DOL.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\obj\Debug\AngularJsAppDemo.DOL.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\obj\Debug\AngularJsAppDemo.DOL.csprojResolveAssemblyReference.cache

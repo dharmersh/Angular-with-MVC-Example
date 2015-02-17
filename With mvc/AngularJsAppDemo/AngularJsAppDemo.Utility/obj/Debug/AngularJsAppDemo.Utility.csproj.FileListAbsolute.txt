@@ -1,0 +1,5 @@
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Utility\bin\Debug\AngularJsAppDemo.Utility.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Utility\bin\Debug\AngularJsAppDemo.Utility.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Utility\obj\Debug\AngularJsAppDemo.Utility.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Utility\obj\Debug\AngularJsAppDemo.Utility.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Utility\obj\Debug\AngularJsAppDemo.Utility.csprojResolveAssemblyReference.cache

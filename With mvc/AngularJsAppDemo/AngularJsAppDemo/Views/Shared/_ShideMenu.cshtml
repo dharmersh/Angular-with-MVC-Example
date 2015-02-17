@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ValidationApp.Models.NavigationMenu>
+@{
+    ViewBag.Title = "GenerateMenu";
+}
+<div id='content' style="margin-top: 20%;">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Create a jqxMenu
+            $("#jqxMenu").jqxMenu({ width: '200px', height: '220px', mode: 'vertical' });
+            $("#jqxMenu").css('visibility', 'visible');
+        });
+    </script>
+    <div id='jqxWidget' style='height: 300px;'>
+        <div id='jqxMenu' style="visibility: hidden;">
+            <ul>
+                @if (Model != null)
+                {
+                    foreach (var item in Model)
+                    {
+                    <li>@Html.ActionLink(item.DisplayName, item.Actions, item.Controllers)
+                        @if (item.MenuChildren.Count != 0)
+                        {
+                            <ul>
+                                @foreach (var itemlist in item.MenuChildren)
+                                {
+                                   
+                                    <li>@Html.ActionLink(itemlist.DisplayName, itemlist.Actions, itemlist.Controllers)
+                                        @if (itemlist.MenuChildren.Count != 0)
+                                        {
+                                            <ul>
+                                                @foreach (var list in itemlist.MenuChildren)
+                                                { 
+                                                    <li>@Html.ActionLink(list.DisplayName, list.Actions, list.Controllers) </li>
+                                                }
+                                            </ul>
+                                        }
+                                    </li>
+                                }
+                            </ul>
+                        }
+                    </li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+</div>

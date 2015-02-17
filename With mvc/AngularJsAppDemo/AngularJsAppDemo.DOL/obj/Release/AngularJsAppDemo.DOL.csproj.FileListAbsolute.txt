@@ -1,0 +1,7 @@
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\bin\Release\AngularJsAppDemo.DOL.dll.config
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\bin\Release\AngularJsAppDemo.DOL.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\bin\Release\AngularJsAppDemo.DOL.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\bin\Release\EntityFramework.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\bin\Release\EntityFramework.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\obj\Release\AngularJsAppDemo.DOL.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.DOL\obj\Release\AngularJsAppDemo.DOL.pdb

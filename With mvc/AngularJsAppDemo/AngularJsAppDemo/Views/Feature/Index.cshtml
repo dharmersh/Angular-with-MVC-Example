@@ -1,0 +1,63 @@
+﻿<h3>Feature Of Angular JS</h3>
+<script src="~/Scripts/angular.js"></script>
+
+
+<div data-ng-app="app">
+    <div data-ng-controller="appController">
+       User Name:
+        <br />
+        <input type="text" data-ng-model="userName"/>
+        <span data-ng-repeat="item in choices|filter:userName">
+            <label class="checkbox">
+                <input type="checkbox" name="{{item.url}}" id="{{item.name}}" data-ng-model="item.checked" data-ng-change="updateValues()" />
+                {{item.label}}
+            </label>
+        </span>
+        <br />
+        <span data-ng-repeat='id in MyselectedValue' data-ng-model="selectedItem">{{id.label}}-{{id.value}}<br />  </span>
+        <br />
+        <input type="button" data-ng-click="Show()" value="Show Value" />
+        <span data-ng-bind="userName"></span>
+         <span data-ng-repeat="n in behaviour"><br />{{n}}<br /></span>
+    </div>
+</div>
+<script>
+    var app = angular.module("app", []);
+    angular.injector(["app"]).invoke(function() {
+        alert("HI");
+    });
+    app.controller("appController", function ($scope, $filter) {
+        $scope.behaviour = "";
+        $scope.Show = function () {
+            alert($scope.userName);
+        };
+        
+        $scope.choices = [{
+            "id": 1,
+            "value": "1",
+            "label": "Good"
+        },
+        {
+            "id": 2,
+            "value": "2",
+            "label": "Ok"
+        },
+        {
+            "id": 3,
+            "value": "3",
+            "label": "Bad"
+        }];
+     
+
+        $scope.MyselectedValue = [];
+        $scope.updateValues = function () {
+            $scope.MyselectedValue = $filter('filter')($scope.choices, { checked: true })
+        }
+        $scope.$watch("MyselectedValue", function (newValue, oldValues) {
+            $scope.MyselectedValue = newValue;
+            $scope.behaviour = newValue;
+        });
+    });
+    
+
+</script>

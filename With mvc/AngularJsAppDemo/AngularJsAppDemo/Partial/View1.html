@@ -1,0 +1,43 @@
+﻿<div style="width: 500px">
+    <table data-ng-align="center" style="width: 100%; border: 1px solid red; text-align: center">
+        <tr>
+            <th>Name
+            </th>
+            <th>Address
+            </th>
+            <th>Age
+            </th>
+        </tr>
+        <tr data-ng-repeat="item in Users|filter:searchUser">
+            <td>{{item.Name}}
+            </td>
+            <td>{{item.Address}}
+            </td>
+            <td>{{item.Age}}
+            </td>
+            <td>
+                <button data-ng-click="deleteUser(item)">Delete</button>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <div>
+        User Name :
+        <br />
+        <input type="text" data-ng-model="newUser.Name" />
+        &nbsp &nbsp <span data-ng-bind="newUser.Name"></span>
+        <br />
+        Address :
+        <br />
+        <input type="text" data-ng-model="newUser.Address" />
+        &nbsp &nbsp <span data-ng-bind="newUser.Address"></span>
+        <br />
+        Age :
+        <br />
+        <input type="text" data-ng-model="newUser.Age" />
+        &nbsp &nbsp <span data-ng-bind="newUser.Age"></span>
+        <br />
+        <button data-ng-click="addUser();">Add User</button>
+    </div>
+    <a href="#ShowOrders">View2</a>
+</div>

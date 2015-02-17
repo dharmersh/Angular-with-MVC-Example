@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DataModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Users" EntityType="DataModel.User" />
+    <EntitySet Name="Roles" EntityType="DataModel.Role" />
+    <EntitySet Name="UserRoleMaps" EntityType="DataModel.UserRoleMap" />
+    <EntitySet Name="Menus" EntityType="DataModel.Menu" />
+    <EntitySet Name="ControllerNames" EntityType="DataModel.ControllerName" />
+    <EntitySet Name="Actions" EntityType="DataModel.Action" />
+    <EntitySet Name="RoleMenuMaps" EntityType="DataModel.RoleMenuMap" />
+    <AssociationSet Name="UserUserRoleMap" Association="DataModel.UserUserRoleMap">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserRoleMap" EntitySet="UserRoleMaps" />
+    </AssociationSet>
+    <AssociationSet Name="RoleUserRoleMap" Association="DataModel.RoleUserRoleMap">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="UserRoleMap" EntitySet="UserRoleMaps" />
+    </AssociationSet>
+    <AssociationSet Name="RoleRoleMenuMap" Association="DataModel.RoleRoleMenuMap">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="RoleMenuMap" EntitySet="RoleMenuMaps" />
+    </AssociationSet>
+    <AssociationSet Name="ControllerNameMenu" Association="DataModel.ControllerNameMenu">
+      <End Role="ControllerName" EntitySet="ControllerNames" />
+      <End Role="Menu" EntitySet="Menus" />
+    </AssociationSet>
+    <AssociationSet Name="ActionMenu" Association="DataModel.ActionMenu">
+      <End Role="Action" EntitySet="Actions" />
+      <End Role="Menu" EntitySet="Menus" />
+    </AssociationSet>
+    <AssociationSet Name="MenuRoleMenuMap" Association="DataModel.MenuRoleMenuMap">
+      <End Role="Menu" EntitySet="Menus" />
+      <End Role="RoleMenuMap" EntitySet="RoleMenuMaps" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" />
+    <Property Type="String" Name="MiddleName" Nullable="false" />
+    <Property Type="String" Name="LastName" Nullable="false" />
+    <Property Type="String" Name="Address" Nullable="false" />
+    <Property Type="Int32" Name="Age" Nullable="false" />
+    <Property Type="String" Name="ContactNo" Nullable="false" />
+    <Property Type="String" Name="EmailID" Nullable="false" />
+    <Property Type="String" Name="Gender" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="String" Name="Password" Nullable="false" />
+    <NavigationProperty Name="UserRoleMaps" Relationship="DataModel.UserUserRoleMap" FromRole="User" ToRole="UserRoleMap" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RoleName" Nullable="false" />
+    <NavigationProperty Name="UserRoleMaps" Relationship="DataModel.RoleUserRoleMap" FromRole="Role" ToRole="UserRoleMap" />
+    <NavigationProperty Name="RoleMenuMaps" Relationship="DataModel.RoleRoleMenuMap" FromRole="Role" ToRole="RoleMenuMap" />
+  </EntityType>
+  <EntityType Name="UserRoleMap">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="Int32" Name="RoleID" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="DataModel.UserUserRoleMap" FromRole="UserRoleMap" ToRole="User" />
+    <NavigationProperty Name="Role" Relationship="DataModel.RoleUserRoleMap" FromRole="UserRoleMap" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ParentID" Nullable="false" />
+    <Property Type="String" Name="DisplayName" Nullable="false" />
+    <Property Type="Int32" Name="DisplayOrder" Nullable="false" />
+    <Property Type="Boolean" Name="IsAccess" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsExtraAccess" Nullable="false" />
+    <Property Type="String" Name="ExtraAccessFunction" Nullable="false" />
+    <Property Type="Int32" Name="ControllerNameID" Nullable="false" />
+    <Property Type="Int32" Name="ActionID" Nullable="false" />
+    <NavigationProperty Name="ControllerName" Relationship="DataModel.ControllerNameMenu" FromRole="Menu" ToRole="ControllerName" />
+    <NavigationProperty Name="Action" Relationship="DataModel.ActionMenu" FromRole="Menu" ToRole="Action" />
+    <NavigationProperty Name="RoleMenuMaps" Relationship="DataModel.MenuRoleMenuMap" FromRole="Menu" ToRole="RoleMenuMap" />
+  </EntityType>
+  <EntityType Name="ControllerName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" />
+    <NavigationProperty Name="Menus" Relationship="DataModel.ControllerNameMenu" FromRole="ControllerName" ToRole="Menu" />
+  </EntityType>
+  <EntityType Name="Action">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ActionName" Nullable="false" />
+    <NavigationProperty Name="Menus" Relationship="DataModel.ActionMenu" FromRole="Action" ToRole="Menu" />
+  </EntityType>
+  <EntityType Name="RoleMenuMap">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="MenuID" Nullable="false" />
+    <Property Type="Int32" Name="RoleID" Nullable="false" />
+    <NavigationProperty Name="Role" Relationship="DataModel.RoleRoleMenuMap" FromRole="RoleMenuMap" ToRole="Role" />
+    <NavigationProperty Name="Menu" Relationship="DataModel.MenuRoleMenuMap" FromRole="RoleMenuMap" ToRole="Menu" />
+  </EntityType>
+  <Association Name="UserUserRoleMap">
+    <End Type="DataModel.User" Role="User" Multiplicity="1" />
+    <End Type="DataModel.UserRoleMap" Role="UserRoleMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserRoleMap">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RoleUserRoleMap">
+    <End Type="DataModel.Role" Role="Role" Multiplicity="1" />
+    <End Type="DataModel.UserRoleMap" Role="UserRoleMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserRoleMap">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RoleRoleMenuMap">
+    <End Type="DataModel.Role" Role="Role" Multiplicity="1" />
+    <End Type="DataModel.RoleMenuMap" Role="RoleMenuMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RoleMenuMap">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ControllerNameMenu">
+    <End Type="DataModel.ControllerName" Role="ControllerName" Multiplicity="1" />
+    <End Type="DataModel.Menu" Role="Menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ControllerName">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Menu">
+        <PropertyRef Name="ControllerNameID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ActionMenu">
+    <End Type="DataModel.Action" Role="Action" Multiplicity="1" />
+    <End Type="DataModel.Menu" Role="Menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Action">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Menu">
+        <PropertyRef Name="ActionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MenuRoleMenuMap">
+    <End Type="DataModel.Menu" Role="Menu" Multiplicity="1" />
+    <End Type="DataModel.RoleMenuMap" Role="RoleMenuMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RoleMenuMap">
+        <PropertyRef Name="MenuID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

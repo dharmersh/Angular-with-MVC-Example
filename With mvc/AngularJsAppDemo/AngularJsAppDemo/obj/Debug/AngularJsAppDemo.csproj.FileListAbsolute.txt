@@ -1,0 +1,74 @@
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.Business.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.DOL.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.Utility.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\EntityFramework.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\Microsoft.Web.Infrastructure.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\Newtonsoft.Json.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Net.Http.Formatting.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Helpers.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Http.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Http.WebHost.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Mvc.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Razor.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.WebPages.Deployment.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.WebPages.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.WebPages.Razor.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.DAL.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.Business.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.DOL.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.Utility.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\EntityFramework.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\Newtonsoft.Json.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Net.Http.Formatting.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Helpers.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Http.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Http.WebHost.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Mvc.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Razor.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.WebPages.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.WebPages.Deployment.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.WebPages.Razor.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.DAL.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\obj\Debug\AngularJsAppDemo.csprojResolveAssemblyReference.cache
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\obj\Debug\AngularJsAppDemo.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo\obj\Debug\AngularJsAppDemo.pdb
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.pdb
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.Business.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.DOL.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.Utility.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\EntityFramework.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\Newtonsoft.Json.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Net.Http.Formatting.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Helpers.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Http.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Http.WebHost.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Mvc.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Razor.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.WebPages.Deployment.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.WebPages.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.WebPages.Razor.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.DAL.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.Business.pdb
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.DOL.pdb
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.Utility.pdb
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\EntityFramework.xml
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\Newtonsoft.Json.xml
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Net.Http.Formatting.xml
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Helpers.xml
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Http.xml
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Http.WebHost.xml
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Mvc.xml
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.Razor.xml
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.WebPages.xml
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.WebPages.Deployment.xml
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\System.Web.WebPages.Razor.xml
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\bin\AngularJsAppDemo.DAL.pdb
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\obj\Debug\AngularJsAppDemo.csprojResolveAssemblyReference.cache
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\obj\Debug\AngularJsAppDemo.dll
+C:\Users\dharmeshb\Desktop\PPT Angular JS\With mvc\AngularJsAppDemo\AngularJsAppDemo\obj\Debug\AngularJsAppDemo.pdb

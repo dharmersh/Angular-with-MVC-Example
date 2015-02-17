@@ -1,0 +1,185 @@
+﻿@model IEnumerable<AngularJsAppDemo.DOL.User>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+   
+</style>
+<link href="~/Content/Site.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/jquery.dataTables.css" rel="stylesheet" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script src="~/Scripts/jquery.dataTables.js"></script>
+
+
+<div data-ng-app="app">
+    <br />
+    <div class="col-md-9 center-block" data-ng-controller="NewController">
+
+        <div class="divStyle">
+            <table style="width: 100%; float: right;">
+                <tr>
+                    <td colspan="2"></td>
+                    <td style="float: right">Search </td>
+                    <td>
+                        <div class="col-xs-6">
+                            <input type="text" data-ng-model="searchUser" class="form-control" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="divStyle">
+            <table class="table_filter table">
+                <tr>
+                    <th>Name
+                    </th>
+                    <th>Address
+                    </th>
+                    <th>Age
+                    </th>
+                </tr>
+                <tr data-ng-repeat="item in Users|filter:searchUser">
+                    <td>{{item.Name}}
+                    </td>
+                    <td>{{item.Address}}
+                    </td>
+                    <td>{{item.Age}}
+                    </td>
+                    <td>
+                        <a href="#openModal" data-ng-click="UpdateUser($index)">Update</a>
+                    </td>
+                    <td>
+                        <a href="#" data-ng-click="deleteUser($index)">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td>
+                        <a href="#openModal" class="btn btn-primary">Add User</a>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" data-ng-click="submit()">Submit</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="openModal" class="modalDialog">
+            <div>
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    @Html.Partial("_UserPartailIndex")
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+    <script type="text/javascript">
+
+        var angularApp = angular.module("app", []);
+
+
+        //create root
+        angularApp.config(['$routeProvider',
+              function ($routeProvider) {
+                  $routeProvider.
+                    when('/AddNewOrder', {
+                        templateUrl: '_UserPartailIndex.cshtml',
+                        controller: 'userController'
+                    });
+              }]);
+        // factory create
+        angularApp.factory('SimpleFactory', function ($http) {
+            var factory = {};
+
+            factory.getUser = function () {
+                return  @Html.Raw(ViewBag.AvailableTags)
+            }
+
+            factory.SubmitUser = function (userList) {
+                $http.post('/User/AddUser', { user: userList }).
+                  success(function (data, status, headers, config) {
+                      alert("Data updated successfully");
+                  }).
+                  error(function (data, status, headers, config) {
+                  });
+            }
+
+            factory.DeleteUser = function (id) {
+                $http.post('/User/DeleteUser', { id: id }).
+                  success(function (data, status, headers, config) {
+                      alert("Data deleted successfully");
+                  }).
+                  error(function (data, status, headers, config) {
+                  });
+            }
+            return factory;
+        });
+
+        angularApp.controller("NewController", function ($scope, SimpleFactory) {
+            $scope.Users = [];
+            $scope.ModelUser = [];
+            $scope.ListOfUser = {};
+            var updateUser = "";
+            var index = "";
+            init();
+            function init() {
+                $scope.Users = SimpleFactory.getUser();
+            }
+            $scope.addUser = function () {
+
+                if ($scope.newUser.ID == 0) {
+                    $scope.Users.push(
+                        {
+                            Name: $scope.newUser.Name,
+                            Address: $scope.newUser.Address,
+                            Age: $scope.newUser.Age
+                        });
+                    $scope.newUser.Gender = "";
+                    $scope.newUser.IsActive = true;
+                    $scope.newUser.LastName = "";
+                    $scope.newUser.MiddleName = "";
+                    $scope.newUser.ContactNo = "123456789";
+                    $scope.newUser.EmailID = 'abc@gmailc.com';
+                    $scope.newUser.password = '123';
+                    $scope.ModelUser.push($scope.newUser);
+                    $scope.ListOfUser = $scope.ModelUser;
+                    $scope.newUser = "";
+                }
+                else {
+                    alert("user added to update submit for changes");
+                    $scope.Users[index] = updateUser;
+                    $scope.ModelUser.push(updateUser);
+                    $scope.ListOfUser = $scope.ModelUser;
+                    $scope.newUser = "";
+                }
+            }
+
+            $scope.UpdateUser = function (index) {
+                var user = $scope.Users[index];
+                $scope.newUser = user;
+                updateUser = user;
+                index = index;
+
+            }
+
+            $scope.deleteUser = function (index) {
+                var id = $scope.Users[index].ID;
+                var flag = confirm("Are you  sure you want to delete !");
+                if (flag) {
+                    SimpleFactory.DeleteUser(id);
+                    $scope.Users.splice(index, 1);
+                }
+            }
+            $scope.submit = function () {
+                var message = SimpleFactory.SubmitUser($scope.ListOfUser);
+            }
+        });
+
+    </script>
+</div>

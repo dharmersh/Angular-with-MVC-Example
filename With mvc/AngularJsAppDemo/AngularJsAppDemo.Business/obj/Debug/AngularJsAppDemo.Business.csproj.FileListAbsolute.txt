@@ -1,0 +1,13 @@
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\bin\Debug\AngularJsAppDemo.Business.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\bin\Debug\AngularJsAppDemo.Business.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\bin\Debug\AngularJsAppDemo.DAL.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\bin\Debug\AngularJsAppDemo.DOL.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\bin\Debug\AngularJsAppDemo.Utility.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\bin\Debug\EntityFramework.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\bin\Debug\AngularJsAppDemo.DAL.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\bin\Debug\AngularJsAppDemo.DOL.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\bin\Debug\AngularJsAppDemo.Utility.pdb
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\bin\Debug\EntityFramework.xml
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\obj\Debug\AngularJsAppDemo.Business.csprojResolveAssemblyReference.cache
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\obj\Debug\AngularJsAppDemo.Business.dll
+D:\Dharmesh\Project\AngularJsAppDemo\AngularJsAppDemo.Business\obj\Debug\AngularJsAppDemo.Business.pdb
