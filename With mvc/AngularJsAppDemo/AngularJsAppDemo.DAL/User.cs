@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using AngularJsAppDemo.Utility;
 using AngularJsAppDemo.DOL;
+using System.Data.Entity.Validation;
 
 namespace AngularJsAppDemo.DAL
 {
@@ -67,15 +68,31 @@ namespace AngularJsAppDemo.DAL
                     }
                     else
                     {
+                        model.Gender = "M";
+                        model.MiddleName = "";
+                        model.LastName="";
                         container.Users.Add(model);
+                        message = "Added Successfully";
                     }
                     container.SaveChanges();
                 }
                 return message;
             }
-            catch
+           catch (DbEntityValidationException ex)
             {
-                throw;
+                // Retrieve the error messages as a list of strings.
+                var errorMessages = ex.EntityValidationErrors
+                        .SelectMany(x => x.ValidationErrors)
+                        .Select(x => x.ErrorMessage);
+
+                // Join the list to a single string.
+                var fullErrorMessage = string.Join("; ", errorMessages);
+
+                // Combine the original exception message with the new one.
+                var exceptionMessage = string.Concat(ex.Message, " The validation errors are: ", fullErrorMessage);
+
+                // Throw a new DbEntityValidationException with the improved exception message.
+                throw new DbEntityValidationException(exceptionMessage, ex.EntityValidationErrors);
             }
         }
     }
