@@ -133,7 +133,7 @@
             }
             $scope.addUser = function () {
 
-                if ($scope.newUser.ID == 0) {
+                 if ($scope.newUser.ID == undefined) {
                     $scope.Users.push(
                         {
                             Name: $scope.newUser.Name,
